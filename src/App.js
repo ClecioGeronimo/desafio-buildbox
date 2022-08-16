@@ -1,23 +1,33 @@
-import logo from './logo.svg';
+import foto from './assets/bx-logo.png';
+import img from './assets/photo-base.jpg';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <div className="container">
+      <div className="header">
+        <img
+          src={foto}
+          className="bx-logo"
+        />
+      </div>
+      <div className="container-form">
+        <div className="box-foto">
+          <img src={img} alt="Foto de Plublicação" />
+        </div>
+        <div>
+          <input className="input" placeholder="Seu Nome" />
+        </div>
+        <div>
+          <textarea className="input-text" name="text" rows="10"></textarea>
+        </div>
+        <div className="btn">
+          <a href="#" className="descartar">Descartar</a>
+          <button className="btn-active">
+            <span className="Publicar"> Publicar </span>
+          </button>
+        </div>
+      </div>
     </div>
   );
 }
